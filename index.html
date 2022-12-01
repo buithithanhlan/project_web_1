@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;400;500;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+      body,
+      html {
+        margin: 0;
+        padding: 2px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .content_menu {
+        padding-top: 17px;
+        height: 70px;
+        padding-right: 30px;
+        background-color: black;
+      }
+      .content_menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-weight: bold;
+      }
+      .img_flag {
+        width: 17px;
+        height: auto;
+      }
+      .content_menu li {
+        float: right;
+      }
+
+      .content_menu a {
+        font-family: "Ubuntu", sans-serif;
+      }
+
+      .content_menu li a,
+      .drop {
+        display: inline-block;
+        color: #dfaa5b;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+      }
+
+      .content_menu li a:hover {
+        color: white;
+      }
+
+      .content_menu li.dropdown {
+        display: inline-block;
+      }
+
+      .dropdown__content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 140px;
+        box-shadow: 0px 8px 16px 0px black;
+        z-index: 1;
+      }
+
+      .dropdown__content a {
+        color: #dfaa5b;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown__content a:hover {
+        background-color: rgba(0, 0, 0, 0.139);
+        color: black;
+      }
+
+      .dropdown:hover .dropdown__content {
+        display: block;
+      }
+      .img_logo {
+        width: 90px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content_menu">
+      <ul>
+        <li class="dropdown">
+          <a class="drop"
+            >EN &nbsp;<img class="img_flag" src="./Ảnh/3909383.png"
+          /></a>
+          <div class="dropdown__content">
+            <a href="trang-tieng-viet"
+              >VI &nbsp;<img class="img_flag" src="./Ảnh/323319.png"
+            /></a>
+          </div>
+        </li>
+        <li><a href="trang-uu-dai">Promotion</a></li>
+        <li><a href="to-chuc-su-kien">Booking event</a></li>
+        <li><a href="dang-ky-dich-vu">Service pack</a></li>
+        <li><a href="trang-dat-phong">Booking room</a></li>
+        <li><a href="trang-gioi-thieu">About us</a></li>
+        <li><a href="./LOGIN.html">Sign up</a></li>
+        <li><img class="img_logo" src="./media.images/imglogo.png" /></li>
+      </ul>
+    </div>
+  </body>
+</html>
